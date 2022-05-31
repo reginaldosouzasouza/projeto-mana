@@ -1,0 +1,127 @@
+@charset "UTF-8";   
+
+@font-face {
+    font-family: 'fontep2';
+    src: url('../fontes/machiavelli/Machv2.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+* {  /*configuração global  para eliminar o espaçamento do margin e padding*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+   background:url("https://images.vexels.com/media/users/3/222147/raw/da3de7b089120cbe4deadf427fa70b68-desenho-de-fundo-de-espigas-de-trigo.jpg?w=1800&fmt=webp");
+   
+   text-align: justify;
+   text-indent: ;
+   
+}
+ header {
+   margin: 0px;
+     text-align: center;
+    padding-top: 0px; /*neste caso quando colocou o paadin ele se afastou do topo*/
+    /*box-shadow: 0px 0px 10px rgba(0,0,0.705);  /*sombra dos lados*/
+   /* border-radius: 10px; /* borda nos cantos arrendondados*/
+ }
+
+
+header > h1 {
+    
+  color: brown;
+  font-family: 'fontep2', Arial, Helvetica, sans-serif;
+   font-size: 16rem;
+   margin-bottom: 0px;/*neste caso quando colocou o margin-botton, esse h1 deu espaçamento arao p (abaixo)*/
+  /*  text-shadow: 5px 5px 1px rgba(162, 238, 9, 0.582);*/
+   
+}
+header h2 {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 4rem;
+   text-align: center;
+   margin-bottom: 0px;/*neste caso quando colocou o margin-botton, esse h1 deu espaçamento arao p (abaixo)*/
+  /*  text-shadow: 5px 5px 1px rgba(162, 238, 9, 0.582);*/
+
+}
+header h3 {
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 1rem;
+   text-align: center;
+   margin-bottom: 0px;/*neste caso quando colocou o margin-botton, esse h1 deu espaçamento arao p (abaixo)*/
+  /*  text-shadow: 5px 5px 1px rgba(162, 238, 9, 0.582);*/
+  
+}
+header p {
+   color:brown;
+    font-family: 'fontep2', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 20px
+   
+}
+header > p1 {
+    color: rgb(6, 253, 200);
+    font-size: 3em;
+    font-weight: bolder;
+}
+   
+header > p3 {
+    color: red;
+}
+header >.contatos {
+    color: white;
+      
+    
+    }
+
+       
+  nav {
+    background-color:rgba(97, 163, 35, 0.555);
+    padding: 0px;
+    box-shadow: 0px 7px 7px rgba(0,0,0.192);
+    word-spacing: 350px;
+  
+   
+}
+ nav > a {
+     color: white;
+     padding: 10px;
+     text-decoration: none;
+     font-weight: bolder;
+     font-size: 1.5rem;
+ 
+ }
+ nav > a:hover {
+     background-color: brown;
+     color:var(--cor06);
+     }
+
+.contatos {
+   margin-top:30px;  /* quanto maior, mais para baixo*/
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+    .contatos ul {
+        font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color:black;   
+}   
+    .whatsmana {
+       
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-top:30PX; 
+    }
+     
+             
+    

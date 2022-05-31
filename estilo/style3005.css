@@ -1,0 +1,231 @@
+@charset "UTF-8";   
+
+@font-face {
+    font-family: 'fontep2';
+    src: url('../fontes/machiavelli/Machv2.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+* {  /*configuração global  para eliminar o espaçamento do margin e padding*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+   background:url("https://images.vexels.com/media/users/3/222147/raw/da3de7b089120cbe4deadf427fa70b68-desenho-de-fundo-de-espigas-de-trigo.jpg?w=1800&fmt=webp");
+   
+   text-align: justify;
+   text-indent: ;
+   
+}
+ header {
+   margin: 0px;
+    background-color: rgba(0, 0, 0, 0.377);
+      text-align: center;
+    padding-top: 0px; /*neste caso quando colocou o paadin ele se afastou do topo*/
+    /*box-shadow: 0px 0px 10px rgba(0,0,0.705);  /*sombra dos lados*/
+   /* border-radius: 10px; /* borda nos cantos arrendondados*/
+ }
+
+
+header > h1 {
+    
+  color: brown;
+  font-family: 'fontep2', Arial, Helvetica, sans-serif;
+   font-size: 16rem;
+   margin-bottom: 0px;/*neste caso quando colocou o margin-botton, esse h1 deu espaçamento arao p (abaixo)*/
+  /*  text-shadow: 5px 5px 1px rgba(162, 238, 9, 0.582);*/
+   
+}
+header h2 {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 4rem;
+   margin-bottom: 0px;/*neste caso quando colocou o margin-botton, esse h1 deu espaçamento arao p (abaixo)*/
+  /*  text-shadow: 5px 5px 1px rgba(162, 238, 9, 0.582);*/
+
+}
+header p {
+   color: white;
+   /* font-family: var(--fonte-destaque);
+    font-style: italic;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 5px 5px 1px orangered; */
+}
+header > p1 {
+    color: rgb(6, 253, 200);
+    font-size: 3em;
+    font-weight: bolder;
+}
+   
+header > p3 {
+    color: red;
+}
+header >.contatos {
+    color: white;
+    
+    
+    }
+
+       
+  nav {
+    background-color: #063d1e;
+    padding: 0px;
+    box-shadow: 0px 7px 7px rgba(0,0,0.192);
+    word-spacing: 350px;
+  
+   
+}
+ nav > a {
+     color: white;
+     padding: 10px;
+     text-decoration: none;
+     font-weight: bolder;
+     font-size: 2em;
+ 
+ }
+ nav > a:hover {
+     background-color: brown;
+     color:var(--cor06);
+     }
+
+     @media screen (max-widht:600px) {
+        nav  a {
+            width:100%;
+            column-count: 2;
+         }                    
+     }
+
+/*
+}
+main {
+    background-color: white;
+    min-width: 300;
+    max-width: 800;    
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0.405);  sombra dos lados
+    border-radius: 10px;  borda nos cantos arrendondados
+    
+  }
+  main img {
+    width: 100%;
+  }
+  
+
+
+ main h1 {
+    font-family:  Arial, Helvetica, sans-serif;
+    color:brown;
+}
+/*
+main h2 {
+    font-family: var(--fonte-android);
+}
+main p {
+    margin: 15px 0px; primeiro mexe para cima e o segundo para baixo
+    text-align: justify;
+    text-indent: 30px; serve para cada começo de parágrafo, como se fosse o travessão no começo de cada texto
+    line-height: 2em;
+}
+  main strong {
+      color:var(--cor05);
+      font-weight: bold;
+  }
+
+  main a:hover {
+      text-decoration: underline;
+      color:blueviolet;
+      background-color: orange;
+      font-weight: bold;
+     
+  }
+   main img.pequena {
+    max-width: 350px;
+       display: block;
+       margin: auto;
+   }
+   nav {
+       background-color: #063d1e;
+       padding: 10px;
+       box-shadow: 0px 7px 7px rgba(0,0,0.192);
+      
+   }
+    nav > a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bolder;
+    
+    }
+    nav > a:hover {
+        background-color:var(--cor02);
+        color:var(--cor06);
+        }
+    aside {
+        background-color:var(--cor02);
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow:  5px 5px 5px rgb(233, 14, 14);
+        }
+    aside h3 {
+        background-color: var(--cor06);
+        color:white;
+        padding: 10px;
+        margin: -10 -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    div.video {
+        background-color: var(--cor06);
+        margin-bottom: 30px;
+        margin: 0px -5px 0px -5px; (1º elemento em cima, 2º elemento direita, 3º elemento pra baixo e o 4º elemento esquerda)
+        padding: 5px;
+        padding-bottom: 58%;
+        position: relative;
+    }
+
+    div.video iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    
+
+    aside ul {
+        list-style-type: '\2611\00A0\00A0\00A0\00A0';
+        line-height: 2em;
+        list-style-position: inside;
+        columns: 2;
+    }
+
+
+footer {
+    background-color: var(--cor06);
+    color:white;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+footer a {
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    }    
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+    background-color: rgba(243, 6, 17, 0.575)
+}
+*/
+
